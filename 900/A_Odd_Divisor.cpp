@@ -27,32 +27,22 @@ void fastInputOutput() {
   cout.tie(0);
 }
 
-int main() {
+int main(void) {
 
   // freopen("input.txt", "r", stdin);
   // freopen("output.txt", "w", stdout);
-  string in;
-  cin>>in;
+  int t;
+  cin>>t;
 
-  int n = in.length();
+  while(t-- >0){
+    long long n;
+    cin>>n;
 
-  string res;
-
-  int i = 0;
-
-  while(i<n){
-    if(i < n &&(in[i+1]=='-') && (in[i]=='-')){
-       res+='2';
-        i+=2;
-    }else if(i<n &&( in[i]=='-')&&(in[i+1]=='.')){
-        res+='1';
-        i+=2;
+    if(n &(n-1)){
+        cout<<"YES\n";
     }else{
-        res+='0';
-        i+=1;
+        cout<<"NO\n";
     }
   }
-  cout<<res<<endl;
-
   return 0;
 }
