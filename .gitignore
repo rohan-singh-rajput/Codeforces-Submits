@@ -1,4 +1,4 @@
 # Ignore compiled class files
 *.class
-.cph
-.bin
+*.cph
+*.bin
