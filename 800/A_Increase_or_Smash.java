@@ -21,5 +21,7 @@ public class A_Increase_or_Smash {
             System.out.println(2 * st.size() - 1);
 
         }
+
+        sc.close();
     }
 }
