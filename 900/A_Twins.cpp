@@ -16,7 +16,6 @@ int main(void)
     for (int i = 0; i < n; i++)
     {
         cin >> coins[i];
-
         totalSum += coins[i];
     }
 
@@ -31,9 +30,7 @@ int main(void)
     while (idx >= 0 && maxHalfSum <= (totalSum / 2))
     {
         maxHalfSum += coins[idx];
-
         sumCnt++;
-
         --idx;
     }
 
